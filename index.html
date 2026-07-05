@@ -1,18 +1,84 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Green Point</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<h1>🌱 Green Point</h1>
-<p>환경을 지키는 습관을 만들어 보세요!</p>
+<div class="phone">
 
-<button>오늘의 환경 퀴즈</button>
+    <h1>🌱 Green Point</h1>
+    <p class="subtitle">환경을 위한 작은 실천이 큰 변화를 만듭니다.</p>
+
+    <div class="card">
+        <h2>⭐ 현재 점수</h2>
+        <h1><span id="score">0</span> Point</h1>
+
+        <h2>🌳 내 나무</h2>
+        <div id="tree" class="tree">🌱</div>
+    </div>
+
+    <div class="card">
+
+        <h2>❓ 오늘의 환경 퀴즈</h2>
+
+        <p>
+            라벨이 없는 페트병은 그대로 재활용이 가능할까요?
+        </p>
+
+        <button id="oBtn">O</button>
+        <button id="xBtn">X</button>
+
+        <p id="result"></p>
+
+    </div>
+
+    <div class="card">
+
+        <h2>🎯 오늘의 미션</h2>
+
+        <label>
+            <input type="checkbox" class="mission">
+            텀블러 사용하기
+        </label>
+
+        <label>
+            <input type="checkbox" class="mission">
+            분리수거 하기
+        </label>
+
+        <label>
+            <input type="checkbox" class="mission">
+            불필요한 전등 끄기
+        </label>
+
+    </div>
+
+    <div class="card">
+
+        <h2>📝 오늘의 환경 다짐</h2>
+
+        <textarea
+            id="diary"
+            placeholder="오늘 실천한 환경 보호 활동을 적어보세요."></textarea>
+
+        <button id="saveDiary">
+            저장하기
+        </button>
+
+        <p id="saveMessage"></p>
+
+    </div>
+
+</div>
 
 <script src="script.js"></script>
+
 </body>
 </html>
